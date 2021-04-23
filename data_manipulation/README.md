@@ -12,6 +12,9 @@
 
 * Covid Cases and Deaths Data: https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-by-State-o/9mfq-cb36
 
+* Vaccinations Administered Data:
+https://ourworldindata.org/us-states-vaccinations
+
 * State Abbreviations List: https://www.infoplease.com/us/postal-information/state-abbreviations-and-state-postal-codes
 
 
@@ -29,15 +32,15 @@
 * Combined_Vaccine_df.csv
 
 #### Columns
-* state - 2 Letter Acronym
-* jurisdiction
+* state_name
+* state_code
 * date
 * day_num (count the days since 12/14/2020)
-* pfizer_dose_1
-* pfizer_dose_2
-* moderna_dose_1
-* moderna_dose_2
-* jandj_dose
+* pfe_dose_1
+* pfe_dose_2
+* mrna_dose_1
+* mrna_dose_2
+* jnj_dose_1
 
 #### Invalid Data Removed From DataFrame
 * ???
@@ -48,12 +51,14 @@
 
 #### Orignal Files
 * United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv
+* state_code.csv
 
 #### Clean File
 * c_d_withstate_df.csv
 
 #### Columns
-* state - 2 Letter Acronym
+* state_name
+* state_code
 * date
 * day_num (count the days since 12/14/2020)
 * total_cases
@@ -65,7 +70,7 @@
 * confirmed_deaths
 * probable_deaths
 * new_deaths
-* pnew_death (probable_new_deaths ???)
+* pnew_deaths (probable_new_deaths ???)
 * consent_cases (???)
 * consent_deaths (???)
 * created_at
@@ -73,19 +78,18 @@
 #### Invalid Data Removed From DataFrame
 * ???
 
-
-
 ### Census DataFrame
 
 #### Orignal Data
 * Census API
+* state_code.csv
 
 #### Clean File
 * Population.csv
 
 #### Columns
-* state - 2 Letter Acronym
-* name
+* state_name
+* state_code
 * population
 * median_age
 * household_income
