@@ -28,12 +28,20 @@
 
 * State Abbreviations List: https://www.infoplease.com/us/postal-information/state-abbreviations-and-state-postal-codes
 
+## Repository Structure
+
+* data_manipulation: Contains source data, data cleanup notebooks and cleaned data
+* merged_data_analysis: Contains the merged analysis notebook and final figures
+* presentation: Contains finished presentation and incorporated figures
+* group1_analysis: Tarak Patel's analysis notebook and figures
+* group2_analysis: Anne Niemiec's analysis notebook and figures
+* group3_analysis: Nicole Lund's analysis notebook and figures
 
 ## Planned Visualizations
 
-### Group 1 Charts authored by Tarak Patel
+### Group 1 Charts authored by Tarak Patel (group1_analysis folder)
 
-#### Line Plot showing National Summarized Vaccine Allocations by Date
+#### Chart-1  Line Plot showing National Summarized Vaccine Allocations by Date
 
 * x-axis = Date (The data is reported weekly. To simplify the labels, convert the dates to a week number and then label by month.)
 
@@ -44,7 +52,7 @@
     * Note: y-axis data is a summation for all states
 * Legend labels = Pfizer + Moderna 1st dose, Pfizer + Moderna 2nd dose, J&J Single dose
 
-#### Line Plot showing National Vaccine Allocations by Date
+#### Chart-2  Line Plot showing National Vaccine Allocations by Date
 * x-axis = Date (The data is reported weekly. To simplify the labels, convert the dates to a week number and then label by month.)
 
 * y-axis = 
@@ -57,7 +65,19 @@
 
 * Legend labels = Pfizer 1st dose, Moderna 1st dose, Pfizer 2nd dose, Moderna 2nd dose, J&J Single dose
 
-#### Line Plot showing Individual State (Arizona) Vaccine Allocations by Date
+#### Chart-3  Line Plot showing Individual State (Arizona) Vaccine Allocations by Date
+* x-axis = Date (The data is reported weekly. To simplify the labels, convert the dates to a week number and then label by month.)
+
+* y-axis = 
+    * Line 1 - Pfizer 1st dose allocation
+    * Line 2 - Moderna 1st dose allocations
+    * Line 3 - Pfizer 2nd dose allocations
+    * Line 4 - Moderna 2nd dose allocations
+    * Line 5 - J&J allocations
+
+* Legend labels = Pfizer 1st dose, Moderna 1st dose, Pfizer 2nd dose, Moderna 2nd dose, J&J Single dose
+
+#### Chart-4  Bonus Line Plot showing Individual State (User Choice) Vaccine Allocations by Date
 * x-axis = Date (The data is reported weekly. To simplify the labels, convert the dates to a week number and then label by month.)
 
 * y-axis = 
@@ -70,19 +90,21 @@
 * Legend labels = Pfizer 1st dose, Moderna 1st dose, Pfizer 2nd dose, Moderna 2nd dose, J&J Single dose
 
 
-#### Bonus Line Plot showing Individual State (User Choice) Vaccine Allocations by Date
-* x-axis = Date (The data is reported weekly. To simplify the labels, convert the dates to a week number and then label by month.)
+#### Chart-5  Chart showing the Total Dose Allocated, Total Dose Administered And Total Population by State   
+* x-axis = State  
+* y-axis =   
+	* Bar 1: Total Vaccine Administered by State  
+	* Bar 2: Total Vaccines Allocated by State   
+	* Bar 3: Total Population of the State  
 
-* y-axis = 
-    * Line 1 - Pfizer 1st dose allocation
-    * Line 2 - Moderna 1st dose allocations
-    * Line 3 - Pfizer 2nd dose allocations
-    * Line 4 - Moderna 2nd dose allocations
-    * Line 5 - J&J allocations
+#### Chart-6  Chart showing the % of Total Allocate Vaccines by CDS Vs % of Dose Administered by State (% calculated by dividing the Total Allocated and daily Vaccines by Each States Total Population)
+* x-axis = State
+* y-axis =
+	* Bar 1: Total Vaccine Administered as % of Population of State * Bar 2: Total Vaccines Allocated as % of Population of State  
+	
+Note, the data for Vaccines Adminstered are not separated by state between 12/14/2020 to 1/13/2021
 
-* Legend labels = Pfizer 1st dose, Moderna 1st dose, Pfizer 2nd dose, Moderna 2nd dose, J&J Single dose
-
-### Group 2 Charts authored by Anne Niemiec
+### Group 2 Charts authored by Anne Niemiec (group2_analysis)
 
 #### Stacked Bar Plot showing Vaccine Allocations by State on latest date present in the data
 
@@ -120,9 +142,7 @@
 * Plot 3, y-axis:
     * Bar: Johnson & Johnson cumulative single dose allocation
 
-* Example implementation: https://matplotlib.org/2.0.2/examples/ticks_and_spines/spines_demo.html
-
-### Group 3 Charts authored by Nicole Lund
+### Group 3 Charts authored by Nicole Lund (group3_analysis)
 
 #### Line Plot showing Cumulative National Vaccine Allocations and Reported deaths by date
 
@@ -133,8 +153,6 @@
 
 * Right y-axis = New deaths reported cumulative across states
     * Note, reported daily
-
-* Example report with separate plots: https://www.cnbc.com/2021/04/09/covid-19-cases-deaths-vaccinations-daily-update.html
 
 #### Line Plot showing Cumulative National Vaccine Allocations and Reported deaths by week
 
